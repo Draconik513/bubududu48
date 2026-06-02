@@ -6,19 +6,19 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-  Selamat ulang tahun, sayang. 🤍
+Sayangku,
 
-Hari ini adalah hari yang spesial karena seseorang yang spesial buat aku sedang bertambah usia.
+Hari ini adalah momen yang paling indah karena hari ini kamu lahir ke dunia. Aku ingin berdoa agar kamu selalu dalam lindungan Tuhan, diberi kesehatan, kekuatan, dan kebahagiaan yang tiada akhir.
 
-Aku cuma ingin mendoakan semoga kamu selalu sehat, bahagia, dimudahkan dalam setiap urusan, dan dikuatkan saat menghadapi hal-hal yang tidak mudah. Semoga semua yang sedang kamu perjuangkan bisa berjalan sesuai harapan dan semua doa baikmu menemukan jalannya untuk terkabul.
+Aku tahu hidup tidak selalu mudah, tapi aku ingin kamu tahu bahwa kamu tidak sendiri. Aku akan selalu mendukungmu, menyemangati kamu, dan menjadi pundakmu saat kamu lelah.
 
-Terima kasih sudah hadir di hidupku. Meskipun waktu kita bersama belum terlalu lama, aku bersyukur bisa mengenal seseorang sebaik kamu. Terima kasih untuk perhatianmu, waktumu, dan semua hal kecil yang sering membuat hariku terasa lebih menyenangkan.
+Semoga setiap langkahmu penuh keberkahan, dan setiap impianmu satu per satu menjadi kenyataan. Kamu punya hati yang tulus, senyum yang menenangkan, dan jiwa yang cantik luar dalam. Dunia butuh lebih banyak orang sepertimu.
 
-Semoga di usia yang baru ini kamu menjadi versi terbaik dari dirimu, semakin dewasa, semakin sukses, dan tetap menjadi pribadi yang selalu aku kagumi.
+Aku ingin kamu tahu bahwa aku percaya padamu sepenuhnya. Kamu kuat, kamu hebat, dan kamu pantas mendapatkan yang terbaik. Jangan pernah ragukan dirimu sendiri, karena kamu adalah cahaya dalam hidup banyak orang, termasuk hidupku.
 
-Nikmati hari spesialmu ya. Aku akan selalu mendukungmu dan ikut bahagia melihat setiap langkah baik yang kamu capai.
+Jika suatu hari kamu merasa ragu atau takut, ingatlah doaku ini: semoga kamu selalu dikelilingi orang-orang baik, rezeki yang cukup, dan cinta yang tulus dari semua arah. Termasuk dariku.
 
-Happy Birthday, sayang. Semoga tahun ini menjadi tahun yang penuh cerita baik untukmu. ✨
+Aku cinta kamu, dan akan selalu mencintaimu.
 `
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-100 to-purple-100 p-4 flex flex-col items-center justify-center">
@@ -87,7 +87,7 @@ Happy Birthday, sayang. Semoga tahun ini menjadi tahun yang penuh cerita baik un
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Arya Setyawira💖
+                  Akbar💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   My heart is only for you, Honey🥹

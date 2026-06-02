@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 import Confetti from 'react-confetti';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import happybirthday from '../assets/audio/happybirthday.mp3';
+import { useMusicContext } from '../components/BackgroundMusic';
 
 const CakeCelebration = () => {
   const { width, height } = useWindowSize();
+  const { stopMusic } = useMusicContext() || {};
   const [isExtinguished, setIsExtinguished] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
@@ -23,6 +25,9 @@ const CakeCelebration = () => {
 
   // Initialize audio and check for iOS
   useEffect(() => {
+    // Stop background music saat halaman cake dibuka
+    if (stopMusic) stopMusic();
+
     // Detect iOS device
     setIsIOS(/iPad|iPhone|iPod/.test(navigator.userAgent) || 
              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));

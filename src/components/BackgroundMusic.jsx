@@ -1,14 +1,17 @@
-import { useState, useEffect, useRef } from "react";
-import laguUltah from "../assets/audio/laguultah.mp3"; // sesuaikan path jika perlu
+import { useState, useEffect, useRef, createContext, useContext } from "react";
+import laguUltah from "../assets/audio/laguultah.mp3";
 
-const BackgroundMusic = () => {
+export const MusicContext = createContext(null);
+
+export const useMusicContext = () => useContext(MusicContext);
+
+const BackgroundMusic = ({ children }) => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef(null);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-
     if (isMusicPlaying) {
       audio.play().catch(() => {});
     } else {
@@ -16,21 +19,12 @@ const BackgroundMusic = () => {
     }
   }, [isMusicPlaying]);
 
-  const toggleMusic = () => {
-    setIsMusicPlaying((prev) => !prev);
-  };
+  const toggleMusic = () => setIsMusicPlaying((prev) => !prev);
+  const stopMusic = () => setIsMusicPlaying(false);
 
   return (
-    <>
-      {/* Audio Tersembunyi */}
-      <audio
-        ref={audioRef}
-        src={laguUltah}
-        loop
-        autoPlay
-      />
-
-      {/* Tombol Kontrol */}
+    <MusicContext.Provider value={{ stopMusic }}>
+      <audio ref={audioRef} src={laguUltah} loop autoPlay />
       <div className="fixed bottom-20 right-4 z-50">
         <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg flex items-center border border-pink-200">
           <button
@@ -44,7 +38,8 @@ const BackgroundMusic = () => {
           </span>
         </div>
       </div>
-    </>
+      {children}
+    </MusicContext.Provider>
   );
 };
 

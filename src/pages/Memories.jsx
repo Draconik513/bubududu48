@@ -39,35 +39,45 @@ const Memories = ({ isIOS }) => {
 
 <div className="text-left text-pink-800 space-y-4 leading-relaxed">
   <p>
-    💌 <strong>Maaf ya, Sayang...</strong>
+    💌 <strong>Sayang 
+Maafiin bubu yaa 
+</strong>
   </p>
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.6 }}
   >
-  Sayang, di hari ulang tahun km ini aku juga mau minta maaf kalau selama ini pernah bikin km kesel, kecewa, atau sedih karena sikap aku.
+ Mungkin bubu bukan perempuan yang baik buat dudu 
+Bubu selalu marah-marah karena hal kecil 
+Bubu selalu kesal setiap dudu tidak mengerti dengan apa yang bubu maksud dan apa yang bubu mau
   </motion.p>
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.6 }}
   >
-   Aku tau aku masih banyak kurangnya dan masih sering bikin salah. Makasih ya karena selama ini km selalu berusaha ngerti aku dan tetap sabar.
+Bubu egois dan selalu melebih lebihkan masalah 
+Tapi percaya lah dudu 
+Bubu mencintai dudu lebih dari apapun itu dan bubu juga sangat tulus sayang sama dudu 
   </motion.p>
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.6 }}
   >
-  Aku mau terus belajar jadi lebih baik lagi ke depannya. Semoga kita juga bisa sama-sama tumbuh jadi pribadi yang lebih dewasa.
+ Maaf jika dalam mencintai dudu sikap bubu sangat lah rumit 
+Sangat sulit di mengerti di pahami 
+Semoga dudu selalu sabar menghadapi perempuan seperti bubu yaaa
+Dan semoga kita selalu bersama sampai selama lamanya 
+
   </motion.p>
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.6 }}
   >
-  Happy birthday ya, sayang. Semoga semua yang km semogakan bisa terwujud, selalu sehat, bahagia, dan dikelilingi banyak hal baik. 🤍✨
+Amiinnn_✨
   </motion.p>
   
 </div>

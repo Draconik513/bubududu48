@@ -161,7 +161,7 @@ function App() {
       <div
         className={`min-h-screen font-sans pb-24 ${isIOS ? "ios-device" : ""}`}
       >
-        <BackgroundMusic />
+      <BackgroundMusic>
         <Navigation />
         <Routes>
           <Route
@@ -227,6 +227,7 @@ function App() {
             }
           />
         </Routes>
+      </BackgroundMusic>
       </div>
     </Router>
   );
