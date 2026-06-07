@@ -66,7 +66,7 @@ const HomePage = ({ isIOS }) => {
             <p className="text-sky-800 italic">
              "Haii sayangkuuu gimana kabarnya hari ini? ...happy birthday suami gantengku 🥳❤️💋 masya alloh 30 tahun yaa 🤭, makin tua donggg iwwwww 🙊😂"
             </p>
-            <p className="mt-4 text-right text-sky-600 font-medium">- Me</p>
+            <p className="mt-4 text-right text-sky-600 font-medium">- Istrimu</p>
           </div>
         </motion.div>
 
