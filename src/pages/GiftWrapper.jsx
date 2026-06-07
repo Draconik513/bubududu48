@@ -42,7 +42,7 @@ const GiftWrapper = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-pink-100 to-purple-100 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-sky-100 to-blue-100 p-4">
       {showConfetti && (
         <Confetti
           width={width}
@@ -85,7 +85,7 @@ const GiftWrapper = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                <p className="text-xl text-pink-600">
+                <p className="text-xl text-sky-600">
                   Klik untuk membuka hadiah spesial!
                 </p>
               </motion.div>
@@ -113,7 +113,7 @@ const GiftWrapper = () => {
             >
               🎁
             </motion.div>
-            <p className="text-2xl text-pink-600 font-bold">
+            <p className="text-2xl text-sky-600 font-bold">
               Membuka hadiah...
             </p>
           </motion.div>
@@ -128,7 +128,7 @@ const GiftWrapper = () => {
             exit={{ opacity: 0 }}
             className="mt-4 p-4 bg-white rounded-lg shadow-md max-w-md text-center"
           >
-            <p className="text-pink-600">
+            <p className="text-sky-600">
               Hadiah belum bisa dibuka sampai 09 Juni 2026 !
             </p>
             <p className="text-sm text-gray-500 mt-2">
@@ -140,8 +140,8 @@ const GiftWrapper = () => {
 
       {!countdownFinished && (
         <div className="mt-8 p-4 bg-white bg-opacity-80 rounded-lg shadow-md max-w-md text-center">
-          <p className="text-pink-600">Hadiah ini terkunci sampai:</p>
-          <p className="text-xl font-bold text-purple-600"> 09 Juni 2026 </p>
+          <p className="text-sky-600">Hadiah ini terkunci sampai:</p>
+          <p className="text-xl font-bold text-blue-600"> 09 Juni 2026 </p>
         </div>
       )}
     </div>

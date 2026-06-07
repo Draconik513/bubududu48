@@ -7,10 +7,10 @@
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f43f5e, 0 0 20px #f43f5e;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #38bdf8, 0 0 20px #38bdf8;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f43f5e, 0 0 40px #f43f5e;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #38bdf8, 0 0 40px #38bdf8;
   }
 }
 
@@ -20,16 +20,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #fecdd3;
+  background: #bae6fd;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f43f5e;
+  background: #38bdf8;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e11d48;
+  background: #0ea5e9;
 }
 
 /* BUTTON FIXES - iOS Friendly */

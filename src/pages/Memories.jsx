@@ -7,15 +7,15 @@ const Memories = ({ isIOS }) => {
   const [flowerBloom, setFlowerBloom] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-rose-50 p-4 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-b from-sky-50 to-blue-50 p-4 flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="max-w-5xl w-full text-center"
       >
-        <h1 className="text-4xl font-bold text-pink-600 mb-8">
-          Gantengnya Akuu
+        <h1 className="text-4xl font-bold text-sky-600 mb-8">
+          Our Special Memories
         </h1>
 
         <motion.div whileHover={{ scale: isIOS ? 1 : 1.02 }} className="mb-8">
@@ -31,41 +31,48 @@ const Memories = ({ isIOS }) => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8 border border-pink-100"
+          className="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8 border border-sky-100"
         >
-         <h2 className="text-2xl font-semibold text-rose-600 mb-4">
-           Permintaan Maafku di Hari Ulang Tahunmu
+         <h2 className="text-2xl font-semibold text-blue-600 mb-4">
+           Doa Untukmu di Hari Ulang Tahunmu
          </h2>
          
-         <div className="text-left text-pink-800 space-y-4 leading-relaxed">
-           <p>
-             💌 <strong>Maaf ya, Sayang...</strong>
-           </p>
+         <div className="text-left text-sky-800 space-y-4 leading-relaxed">
+           <motion.p
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 1, delay: 0.3 }}
+             className="text-center font-semibold italic"
+           >
+             ✨ Inna fatahna laka fathamm mubiinaa ✨
+           </motion.p>
            <motion.p
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1, delay: 0.6 }}
            >
-             Maaf kalau selama ini aku pernah cuek 😞, terlalu sibuk 😔, atau kurang
-             peka sama perasaanmu 😢. Maaf kalau kadang aku bikin kamu kecewa, salah
-             paham, atau merasa sendiri 😓. Aku gak pernah berniat nyakitin kamu 🥺.
-             Semua itu karena aku manusia biasa yang masih belajar mencintaimu dengan
-             lebih baik 🤍.
+             Ya alloh, boleh sekali lagi ng merayumu, sehatkanlah suamiku, panjangkanlah umurnya karna dia sedang berusaha membangun surganya, dia sedang berusaha membahagiakan seisi rumahnya.
            </motion.p>
            <motion.p
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1, delay: 1.2 }}
            >
-             Terima kasih sudah sabar, sudah tetap di sini 🫶. Aku akan terus belajar
-             jadi lebih baik lagi... untuk kamu 💗
+             Pekerjaannya tiada kata lelah, semua itu hanya untuk mengukir senyum anak dan istrinya dirumah. Ya alloh berilah suamiku rezeki yang halal, lancarkanlah segala urusannya, gantilah keringat suamiku dengan kebahagiaan dan RahmatMu.
            </motion.p>
            <motion.p
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1, delay: 1.8 }}
            >
-             🙏🏻 Maaf ya, dan makasih karena kamu tetap percaya sama aku.
+             Aamiin Allohumma aamiin 🤲🏻❤️
+           </motion.p>
+           <motion.p
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 1, delay: 2.4 }}
+           >
+             Suamiku tercintaaa sekali lagii selamat ulang tahun yaa, selalu menjadi imam terbaik buat ng dan anak anak kita yaaa... 💋💋💋💋💋💋💋💋💋💋🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍💙💙💙💙💙💙💙💙💙💙
            </motion.p>
          </div>
 
@@ -75,7 +82,7 @@ const Memories = ({ isIOS }) => {
           whileHover={{ scale: isIOS ? 1 : 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setFlowerBloom(!flowerBloom)}
-          className="relative overflow-hidden bg-rose-600 text-white px-6 py-3 rounded-full shadow-lg mb-8 border border-white/30"
+          className="relative overflow-hidden bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg mb-8 border border-white/30"
           style={{ WebkitTapHighlightColor: "transparent" }}
         >
           <span className="button-text">
@@ -99,7 +106,7 @@ const Memories = ({ isIOS }) => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 100 }}
-              className="rounded-xl overflow-hidden shadow-xl border-4 border-rose-200"
+              className="rounded-xl overflow-hidden shadow-xl border-4 border-sky-200"
               style={{ backfaceVisibility: "hidden" }}
             >
               <video
@@ -130,7 +137,7 @@ const Memories = ({ isIOS }) => {
               {[...Array(5)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="absolute w-32 h-32 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full"
+                  className="absolute w-32 h-32 bg-gradient-to-br from-sky-400 to-blue-500 rounded-full"
                   style={{
                     top: `${Math.cos((i / 5) * 2 * Math.PI) * 40 + 40}px`,
                     left: `${Math.sin((i / 5) * 2 * Math.PI) * 40 + 40}px`,
@@ -163,7 +170,7 @@ const Memories = ({ isIOS }) => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.2 }}
-            className="text-center text-pink-600 mt-6 italic text-lg"
+            className="text-center text-sky-600 mt-6 italic text-lg"
           >
             🌸 Bunga ini sebagai hadiah dari permintaan maaf bubu, Sayang dudu... Tolong di terima yaa 😘😘
           </motion.p>

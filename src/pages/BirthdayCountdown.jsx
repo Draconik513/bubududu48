@@ -54,16 +54,16 @@ const BirthdayCountdown = ({ isIOS }) => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-sky-50 to-blue-50 p-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="text-center max-w-2xl"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-sky-600 mb-8">
           The Birthday of{" "}
-          <span className="text-purple-600">Dimaz Veno Djuniartha</span>
+          <span className="text-blue-600">Sulaeman</span>
         </h1>
 
         <div className="mb-8">
@@ -82,18 +82,18 @@ const BirthdayCountdown = ({ isIOS }) => {
         </div>
 
         <div className="mb-12">
-          <h2 className="text-2xl text-pink-600 mb-4">Menuju Hari Spesialmu</h2>
+          <h2 className="text-2xl text-sky-600 mb-4">Menuju Hari Spesialmu</h2>
           <div className="flex justify-center space-x-2 md:space-x-4">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <motion.div
                 key={unit}
                 whileHover={{ scale: isIOS ? 1 : 1.1 }}
-                className="bg-white p-4 rounded-lg shadow-md text-center min-w-[70px] border border-pink-100"
+                className="bg-white p-4 rounded-lg shadow-md text-center min-w-[70px] border border-sky-100"
               >
-                <div className="text-3xl font-bold text-pink-600">
+                <div className="text-3xl font-bold text-sky-600">
                   {value.toString().padStart(2, "0")}
                 </div>
-                <div className="text-sm text-pink-500 uppercase">
+                <div className="text-sm text-sky-500 uppercase">
                   {unit === "days"
                     ? "hari"
                     : unit === "hours"
@@ -107,16 +107,16 @@ const BirthdayCountdown = ({ isIOS }) => {
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg mb-8 border border-pink-100">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">
-            09 Juni 2026
+        <div className="bg-white p-6 rounded-xl shadow-lg mb-8 border border-sky-100">
+          <h3 className="text-xl font-semibold text-blue-600 mb-2">
+            08 Juni 2026
           </h3>
-          <p className="text-pink-600">
-             Tanggal dimana senyumanmu akan menerangi hariku🥹
+          <p className="text-sky-600">
+             *Ter'untuk suamiku tersayangg* selamat hari lahir manusia baik, hari ini adalah hari nya aa, salah satu hari terbaik yang aa punya dalam hidupnya aa. Semoga langkahnya selalu dipermudah kemanapun kehidupan membawa aa. Semoga rumah, pekerjaan, mimpi dan kehidupan aa selalu dipenuhi keberkahan. Selamat ulang tahun ke-30 suamikuuu 💋💙. Semoga keinginan baik kita disegerakan 🤲🏻🤍. Semoga diumur aa yang sekarang semesta lebih berpihak. Ng juga mau berterimakasih ke aa. Terimakasih sudah menjadi bagian terindah diperjalanan hidup nya ng, apapun yang menanti di depan nanti, semoga kita masih berjalan berdampingan, pelan-pelan, saling menguatkan dan tetap bersama.  Ng berharap kita tetap saling menggenggam dan saling percaya. Semoga setiap impian aa dimudahkan jalannya, setiap lelahnya aa digantikan dengan kebahagiaan, dan setiap doanya aa  menemukan jalannya untuk terkabul... 🤲🏻
           </p>
         </div>
 
-        <p className="mt-6 text-lg text-pink-500 italic text-center">
+        <p className="mt-6 text-lg text-sky-500 italic text-center">
           "today and everyday, i'll always be ur #1 supporter, clap the loudest
           for u, and praying wholeheartedly for ur well-being."
         </p>
@@ -134,16 +134,16 @@ const BirthdayCountdown = ({ isIOS }) => {
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
-              className="bg-white rounded-xl p-6 w-full max-w-md border border-pink-200"
+              className="bg-white rounded-xl p-6 w-full max-w-md border border-sky-200"
             >
-              <h3 className="text-xl font-bold text-pink-600 mb-4">
+              <h3 className="text-xl font-bold text-sky-600 mb-4">
                 Pesan Untuk Pacarmu
               </h3>
               <form onSubmit={handleReplySubmit}>
                 <textarea
                   value={replyMessage}
                   onChange={(e) => setReplyMessage(e.target.value)}
-                  className="w-full p-3 border border-pink-300 rounded-lg mb-4 focus:ring-2 focus:ring-pink-300 focus:border-transparent"
+                  className="w-full p-3 border border-sky-300 rounded-lg mb-4 focus:ring-2 focus:ring-sky-300 focus:border-transparent"
                   rows="4"
                   placeholder="Tulis pesan cintamu disini..."
                   required
@@ -160,7 +160,7 @@ const BirthdayCountdown = ({ isIOS }) => {
                   </motion.button>
                   <motion.button
                     type="submit"
-                    className="px-4 py-2 bg-pink-600 text-white rounded-lg"
+                    className="px-4 py-2 bg-sky-600 text-white rounded-lg"
                     whileHover={{ scale: isIOS ? 1 : 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

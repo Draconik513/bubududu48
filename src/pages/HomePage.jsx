@@ -19,9 +19,9 @@ const HomePage = ({ isIOS }) => {
           transition={{ delay: 0.5 }}
           className="mb-8"
         >
-          <p className="text-lg text-pink-600 pt-4">Untuk yang tersayang</p>
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-pink-600 via-pink-400 to-purple-500 text-transparent bg-clip-text drop-shadow-md">
-            Dimaz Veno Djuniartha
+          <p className="text-lg text-sky-600 pt-4">Untuk yang tersayang</p>
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-sky-600 via-sky-400 to-blue-500 text-transparent bg-clip-text drop-shadow-md">
+            Sulaeman
           </h1>
         </motion.div>
 
@@ -36,7 +36,7 @@ const HomePage = ({ isIOS }) => {
           }}
           className="mb-8"
         >
-          <div className="w-64 h-64 mx-auto rounded-full border-4 border-pink-300 shadow-lg overflow-hidden">
+          <div className="w-64 h-64 mx-auto rounded-full border-4 border-sky-300 shadow-lg overflow-hidden">
             <video
               src={heartVideo}
               autoPlay
@@ -57,18 +57,16 @@ const HomePage = ({ isIOS }) => {
           transition={{ delay: 1 }}
           className="space-y-6"
         >
-          <h2 className="text-3xl font-bold text-pink-600">
+          <h2 className="text-3xl font-bold text-sky-600">
             Selamat Ulang Tahun Sayang!
           </h2>
-          <p className="text-xl text-pink-600">🎉 09 Juni 2003 🎉</p>
+          <p className="text-xl text-sky-600">🎉 08 Juni 1996 🎉</p>
 
-          <div className="mt-8 p-4 bg-white/80 backdrop-blur-sm rounded-lg max-w-md mx-auto border border-pink-200">
-            <p className="text-pink-800 italic">
-             "Untuk pacarku yang tercinta, di hari spesialmu ini aku ingin
-              mengucapkan... Terima kasih telah menjadi cahaya dalam hidupku.
-              Setiap detik bersamamu adalah anugerah."
+          <div className="mt-8 p-4 bg-white/80 backdrop-blur-sm rounded-lg max-w-md mx-auto border border-sky-200">
+            <p className="text-sky-800 italic">
+             "Haii sayangkuuu gimana kabarnya hari ini? ...happy birthday suami gantengku 🥳❤️💋 masya alloh 30 tahun yaa 🤭, makin tua donggg iwwwww 🙊😂"
             </p>
-            <p className="mt-4 text-right text-pink-600 font-medium">- Aulia</p>
+            <p className="mt-4 text-right text-sky-600 font-medium">- Me</p>
           </div>
         </motion.div>
 
@@ -82,7 +80,7 @@ const HomePage = ({ isIOS }) => {
             whileHover={{ scale: isIOS ? 1 : 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate("/gift")}
-            className="relative overflow-hidden bg-pink-500 text-white px-8 py-4 rounded-full shadow-lg text-xl font-bold"
+            className="relative overflow-hidden bg-sky-500 text-white px-8 py-4 rounded-full shadow-lg text-xl font-bold"
           >
             <span className="button-text flex items-center">
               <span className="mr-2">🎁</span>

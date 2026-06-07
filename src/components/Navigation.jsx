@@ -14,7 +14,7 @@ const Navigation = () => {
           <Link 
             key={i} 
             to={path}
-            className="mx-2 p-2 rounded-full hover:bg-pink-100 transition-colors"
+            className="mx-2 p-2 rounded-full hover:bg-sky-100 transition-colors"
           >
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               {path === '/' ? '🏠' : 

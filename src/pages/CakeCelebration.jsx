@@ -248,7 +248,7 @@ const CakeCelebration = () => {
   return (
     <div 
       ref={containerRef}
-      className="min-h-screen bg-gradient-to-b from-pink-900 to-purple-900 flex flex-col items-center justify-center p-4 relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-b from-sky-900 to-blue-900 flex flex-col items-center justify-center p-4 relative overflow-hidden"
     >
       {showConfetti && (
         <Confetti
@@ -266,19 +266,19 @@ const CakeCelebration = () => {
         transition={{ duration: 0.5 }}
         className="text-center z-10"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-300 mb-8 neon-text">
+        <h1 className="text-4xl md:text-5xl font-bold text-sky-300 mb-8 neon-text">
           🎉 Happy Birthday <span className="text-white">My Love</span>! 🎉
         </h1>
         
-        <p className="text-xl text-pink-200 mb-12">
+        <p className="text-xl text-sky-200 mb-12">
           Make a wish and blow the candle 🎂 (use your voice!)
         </p>
 
         <div className="relative mx-auto w-[120px] h-[160px] mb-16">
           {/* Cake */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-0 w-[100px] h-[30px] bg-blue-200 border-2 border-black rounded-t-md z-0"></div>
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-[20px] w-[110px] h-[50px] bg-pink-300 border-2 border-black z-10"></div>
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-[60px] w-[120px] h-[70px] bg-pink-100 border-2 border-black rounded-b-lg z-20"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-[20px] w-[110px] h-[50px] bg-sky-300 border-2 border-black z-10"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-[60px] w-[120px] h-[70px] bg-sky-100 border-2 border-black rounded-b-lg z-20"></div>
           
           {/* Candle */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-[-30px] z-30 overflow-visible">
@@ -286,7 +286,7 @@ const CakeCelebration = () => {
               ref={flameRef}
               className="absolute top-[-15px] left-11/8 transform -translate-x-1/2 w-[20px] h-[35px] bg-radial-flame rounded-flame shadow-flame animate-flicker"
             ></div>
-            <div className="w-[10px] h-[40px] bg-pink-500 rounded-md mx-auto"></div>
+            <div className="w-[10px] h-[40px] bg-sky-500 rounded-md mx-auto"></div>
             <div 
               ref={fireParticlesRef}
               className="absolute top-0 left-0 w-full h-full pointer-events-none"
@@ -311,7 +311,7 @@ const CakeCelebration = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-pink-200 bg-pink-800/50 p-4 rounded-lg mb-4"
+            className="text-sky-200 bg-sky-800/50 p-4 rounded-lg mb-4"
           >
             Tap anywhere to enable audio
           </motion.div>
@@ -442,10 +442,10 @@ const CakeCelebration = () => {
         
         @keyframes neon {
           from {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f43f5e, 0 0 20px #f43f5e;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #38bdf8, 0 0 20px #38bdf8;
           }
           to {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f43f5e, 0 0 40px #f43f5e;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #38bdf8, 0 0 40px #38bdf8;
           }
         }
       `}</style>

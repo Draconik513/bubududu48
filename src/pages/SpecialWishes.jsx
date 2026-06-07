@@ -6,22 +6,34 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Sayangku 💖, hari ini adalah momen yang paling indah karena hari ini kamu lahir ke dunia 🎉. Aku ingin berdoa agar kamu selalu dalam lindungan Tuhan 🙏, diberi kesehatan 💪, kekuatan 🛡, dan kebahagiaan yang tiada akhir 🌈✨.
-Aku tahu hidup tidak selalu mudah 🌧, tapi aku ingin kamu tahu bahwa kamu tidak sendiri 🤝. Aku akan selalu mendukungmu 💞, menyemangati kamu 💫, dan menjadi pundakmu saat kamu lelah 😔➡💆‍♀.
-Semoga setiap langkahmu penuh keberkahan 🕌, dan setiap impianmu satu per satu menjadi kenyataan 🌠. Kamu punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa yang cantik luar dalam 🌹. Dunia butuh lebih banyak orang sepertimu 🌍❤.
-Aku ingin kamu tahu bahwa aku percaya padamu sepenuhnya 🙌. Kamu kuat 💥, kamu hebat 🦋, dan kamu pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan dirimu sendiri 🙅‍♀, karena kamu adalah cahaya dalam hidup banyak orang 🌟, termasuk hidupku 💘.
-Jika suatu hari kamu merasa ragu atau takut 😟, ingatlah doaku ini: Semoga kamu selalu dikelilingi orang-orang baik 👨‍👩‍👧‍👦, rezeki yang cukup 💰, dan cinta yang tulus dari semua arah 💗. Termasuk dariku 🫶.
-Aku cinta kamu ❤, dan akan selalu mencintaimu 💍.
+Terimakasih atas setiap cinta yang aa beri tanpa henti, atas setiap perjuangan yang tak selalu terlihat tapi selalu terasa ✨🌈. 
+
+Semoga usia barunya aa ini bisa membawa lebih banyak bahagia, lebih banyak mimpi yang jadi nyata, dan cinta kita....terus tumbuh tanpa jeda 🤍✨ 
+
+Ya alloh diulang tahun suamiku yang ke-30 tahun ini, neng memohon kepadamu keberkahan atas umur suamiku, kelapangan atas rezeki suamiku, dan kemudahan dalam urusan suamiku..🤲🏻
+
+Kabulkanlah doa neng ya alloh, doa tulus dari neng yang semoga engkau dengarkan dan engkau kabulkan 🤲🏻.
+
+Ya alloh terimakasih atas karunia umur yang engkau berikan kepada suamiku , semoga dengan bertambahnya usia suamiku ini bisa dimanfaatkan suamiku untuk berbakti dijalan-mu, mengabdikan diri untuk anak dan istrinya. 
+
+Ya alloh terimakasih karena engkau telah memberikan kesempatan lagi, kesempatan suamiku untuk menjadi pribadi yang lebih baik.
+
+ Terimakasih ya alloh semoga engkau memudahkan jalan untuk suamiku ... 
+
+Aamiin ya alloh 🤲🏻🤲🏻🤲🏻🤍
+
+
+
 `
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-100 to-purple-100 p-4 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-b from-sky-100 to-blue-100 p-4 flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="max-w-3xl w-full"
       >
-        <h1 className="text-4xl font-bold text-center text-pink-600 mb-8">
+        <h1 className="text-4xl font-bold text-center text-sky-600 mb-8">
           Pesan Spesial Untukmu
         </h1>
 
@@ -45,7 +57,7 @@ Aku cinta kamu ❤, dan akan selalu mencintaimu 💍.
         >
           <div className="prose max-w-none">
             {wishes.split("\n").map((paragraph, i) => (
-              <p key={i} className="text-pink-800 mb-4 text-lg leading-relaxed">
+              <p key={i} className="text-sky-800 mb-4 text-lg leading-relaxed">
                 {paragraph}
               </p>
             ))}
@@ -57,7 +69,7 @@ Aku cinta kamu ❤, dan akan selalu mencintaimu 💍.
             whileHover={{ scale: isIOS ? 1 : 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setShowHeart(!showHeart)}
-            className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-full shadow-lg"
+            className="relative overflow-hidden bg-sky-500 text-white px-6 py-3 rounded-full shadow-lg"
           >
             <span className="button-text">
               {showHeart ? "Sembunyikan Cintaku" : "Lihat Cintaku"}
@@ -80,7 +92,7 @@ Aku cinta kamu ❤, dan akan selalu mencintaimu 💍.
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Dimaz Veno Djuniartha💖
+                  Sulaeman💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                  My Heart Is Only for You, Honey. 🥹
